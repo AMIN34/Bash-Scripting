@@ -1,2 +1,4 @@
 # Bash-Scripting
-Practicing bash sccripting.
+Practicing bash scripting.
+
+Current Level: - Begineer
