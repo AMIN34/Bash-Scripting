@@ -1,4 +1,5 @@
 read -p "Enter no. of rows: " rows
+clear
 i=2
 while [ $i -le $((rows*2)) ]
 do

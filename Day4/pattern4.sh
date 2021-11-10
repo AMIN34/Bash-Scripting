@@ -2,10 +2,10 @@ read -p "Enter no. of rows: " rows
 clear
 i=0
 j=$rows
-while [ $i -lt $rows ]
-do
-	if [ $i -eq $((rows - 1)) ]
-        then
+while [ $i -lt $rows ] 
+do 
+	if [ $i -eq $((rows - 1)) ] 
+	then
                 c=0
                 j=1
                 while [ $c -lt $rows ]
