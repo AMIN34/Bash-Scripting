@@ -1,11 +1,11 @@
 fact(){
 	a=$1
 	f=1
-	for((i=1;i<=n;i++))
+	for((i=1;i<=a;i++))
 	do
 		f=$((f*i))
 	done
-	echo $f
+	return $f
 }
 krishnamurthy(){
 	n=$1
@@ -14,9 +14,9 @@ krishnamurthy(){
 	while [ $n -gt 0 ]
 	do
 		r=$((n%10))
-		x=`fact ${r}`
-		echo $x
-		z=$((z*10 + x))
+		fact $r
+		x=$?
+		z=$((z + x))
 		n=$((n/10))
 	done
 	if [ $temp -eq $z ]
@@ -28,4 +28,3 @@ krishnamurthy(){
 }
 read -p "Enter a number: " n
 krishnamurthy $n
-
