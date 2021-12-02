@@ -21,5 +21,5 @@ pal(){
 }
 
 read -p "Enter a number: " n
-pal n
+pal $n
 
